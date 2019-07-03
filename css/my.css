@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100px;
+}
+.top{
+    background: url("../image/image/my/bg1.png") center center no-repeat;
+    background-size: cover;
+    padding-bottom: .3rem;
+    border-bottom: .02rem solid red;
+}
+.top p{
+    padding: 0rem .6rem;
+    text-align: right;
+}
+.top p span img{
+   width: .6rem;
+   height: auto;
+}
+.top p:nth-child(2){
+    text-align: center;
+}
+.top p:nth-child(2) img{
+    width: 1rem;
+    height: 1rem;
+    padding-bottom: .3rem;
+}
+.top p:nth-child(3){
+    font-size: .4rem;
+    color: white;
+    text-align: center;
+    padding-bottom: .3rem;
+}
+.top p:nth-child(3) span{
+   padding: .15rem .6rem;
+   border: .01rem solid white;
+}
+.list{
+    font-size: .4rem;
+    padding: 0 .8rem;
+    list-style: none;
+    color: rgb(165, 158, 158);
+}
+.list li{
+    padding: .5rem 0;
+    border-bottom: .01rem rgb(141, 137, 137) solid;
+    overflow: hidden;
+}
+.list li span:nth-child(1) img{
+width: .5rem;
+height:auto;
+}
+.list li span:nth-child(2) img{
+width: .2rem;
+height:auto;
+}
+.list li span:nth-child(2){
+float: right;
+}

@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100px;
+}
+body{
+    background: rgb(228, 223, 223);
+}
+/* 头部 */
+header {
+    background: #FF8A00;
+    padding: .15rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header>.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>.left>img {
+    width: 4rem;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+header>.right>ul {
+    list-style: none;
+    display: flex;
+}
+
+header>.right>ul li {
+    padding-top: .2rem;
+    box-sizing: border-box;
+    margin-right: .2rem;
+}
+
+header>.right>ul li img {
+    width: .9rem;
+    height: auto;
+}
+
+header>.right>ul li:last-child {
+    margin-right: 0;
+}
+.pic_{
+   font-size: 0rem;
+}
+
+.swiper-slide img{
+    width:10.24rem;
+   height: 5.92rem;
+}
+.talk_{
+    padding: .5rem .6rem;
+    font-size: .35rem;
+    background: white;
+}
+.price{
+    font-size: .5rem;
+position: relative;
+padding: .3rem 0rem;
+}
+.price span{
+color: red;
+}
+.price span:nth-child(2){
+    position: absolute;
+    right: .5rem;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.price span:nth-child(2) img{
+width: .3rem;
+height: .6rem;
+}
+.talk>p{
+    font-size: .4rem;
+    color: #ccc;
+}
+.talk>.list{
+    margin-top: .3rem;
+}
+.talk>.list span{
+padding: .1rem .3rem;
+background:#DEE9F0;
+margin-right: .2rem;
+}
+ .house{
+    margin-top: .3rem;
+    font-size: .4rem;
+    border:.01rem solid #ccc;
+}
+.house ul{
+    list-style: none;
+    background:white;
+    padding: 0rem .6rem;
+}
+.house ul li{
+    padding: .4rem 0rem;
+border-bottom: .01rem solid #ccc;
+}
+.house ul li p{
+ display: flex;
+ justify-content: space-between;
+}
+.house ul li p  span:last-child{
+    width: 3.52rem;
+    text-align: left;
+   
+}
+.house-m{
+padding-right: .3rem;
+}
+.more{
+   color: rgb(143, 130, 130);
+    width: 3rem;
+    margin: 0 auto;
+}
+.housing{
+    margin-top: .3rem;
+    padding: 0rem .6rem;
+    background: white;
+    border: .01rem solid #ccc;
+}
+.housing p{
+    border-bottom: .01rem solid rgb(163, 159, 159);
+}
+.housing p:nth-child(1){
+font-size: .6rem;
+    color: #FF8A00;
+    padding: .3rem 0;
+}
+.housing p:nth-child(2){
+    padding: .2rem 0 ;
+    font-size: .4rem;
+    line-height: .8rem;
+}
+.housing h5{
+    padding: .3rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: .4rem;
+    color: rgb(168, 162, 162);
+} 
+.room{
+    font-size: .4rem;
+    background: white;
+    padding: .3rem .6rem;
+    margin-top: .3rem;
+    border: #ccc .01rem solid;
+}
+.room img{
+    width: 1.8rem;
+    height: 2rem;
+}
+.room >p{
+    color: #FF8A00;
+    font-size: .6rem;
+    padding: .2rem 0;
+    border-bottom: .01rem solid #ccc;
+    margin-bottom: .3rem;
+}
+.room>.scene{
+    padding-bottom: .3rem;
+    display: flex;
+    border-bottom: #FF8A00 .02rem solid;
+    margin-bottom: .5rem;
+}
+.room .scene div p{
+    padding: .1rem 0 .1rem .4rem;
+}
+
+.room .scene div p:nth-child(1){
+    font-weight: 600;
+}
+.room .scene div p:nth-child(3) span{
+   padding: 0rem .3rem;
+   background: rgb(183, 222, 238);
+   margin-right: .3rem;
+   color: rgb(124, 118, 118);
+}
+.room>.scene_{
+    border-bottom: none;
+} 
+ .school{
+    margin-top: .4rem;
+    background: white;
+    font-size: .4rem;
+}
+.school ul {
+    padding: 0rem .6rem;
+    list-style: none;
+}
+.school ul li{
+    border-bottom: .01rem #ccc solid;
+    padding: .3rem 0;
+}
+.school ul li span {
+    color: rgb(139, 134, 134);
+}
+.school ul li:nth-child(7){
+     color: rgb(139, 134, 134);
+    text-align: center;
+    font-size: .5rem
+}
+.school ul li:nth-child(1){
+     font-weight: 600;
+    font-size: .5rem
+} 
+#container{
+    height: 4rem;
+}
+ .loca{
+    margin-top: .3rem;
+    font-size: .5rem;
+    font-weight: 600;
+    background: white;
+    padding: .2rem .6rem;
+}
+.loca ul{
+    list-style: none;
+}
+.loca ul li{
+    padding: .2rem 0;
+     border-bottom: .01rem #ccc solid;
+}
+.loca ul li img{
+    width: 100%;
+    height: auto;
+} 
+ .recomm{
+    margin-top: .3rem;
+    background: white;
+    font-size: .4rem;
+    padding: .2rem .6rem ;
+}
+.recomm div{
+    display: flex;
+}
+.recomm div img{
+    width: 2.6rem;
+    height: 2.6rem;
+}
+.recomm_{
+   display: flex;
+   flex-direction: column;
+   margin-left: .4rem;
+}
+.recomm_ h4{
+    font-weight: 400;
+    color: rgb(153, 148, 148);
+    padding: .1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.recomm_ h4:nth-child(2){
+    color:black;
+}
+.recomm_ h4:nth-child(2) span{
+    color:#FF8A00;
+}
+
+.recomm p:nth-child(1){
+font-size: .5rem;
+padding: .2rem 0;
+font-weight: 600;
+ border-bottom: .01rem #ccc solid;
+ margin-bottom: .3rem;
+}
+.recomm-p{
+  text-indent: .5rem;
+  background: rgb(222, 231, 245);
+    padding: .3rem 0;
+    margin-bottom: .4rem;
+}
+.recomm-more{
+    text-align: center;
+     padding: .2rem 0;
+} 
+/* 底部 */
+footer {
+    background: #2f3130;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(104, 93, 93);
+    font-size: .3rem;
+}
+
+footer>.talk {
+    font-size: .4rem;
+    padding: .15rem .5rem;
+    color: rgb(139, 125, 125);
+    border-bottom: #757a78 .01rem solid;
+}
+
+footer>.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.pic>ul {
+    margin-top: .3rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer>.pic>ul>li {
+    margin-right: .2rem;
+}
+
+footer>.pic>ul>li>img {
+    width: .6rem;
+    height: .6rem;
+}
+
+footer>.pic>ul>li:nth-child(2) {
+    margin-right: .4rem;
+}
+
+footer>.pic>ul>li:nth-child(4) {
+    margin-right: 0px;
+}
+footer>.pic>h3 {
+    margin: .2rem 0px 10px 0px;
+}
+.relation{
+    padding: .3rem .8rem;
+    display: flex;
+    font-size: .4rem;
+    background: white;
+}
+.re_l{
+    background: #FF8A00;
+    padding: .1rem 1rem;
+    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: .05rem;
+}
+.re_l img{
+margin-right: .2rem;
+width: .8rem;
+height: auto;
+}
+.re_g{
+  padding: .1rem .5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: .05rem;
+}
+.re_g img{
+    margin-right: .2rem;
+width: .8rem;
+height: auto;
+}

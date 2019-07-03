@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+}
+
+.content {
+    padding: 1rem 0;
+    font-size: .4rem;
+    height: 6rem;
+}
+
+.content p {
+    padding: .4rem .4rem;
+    text-align: center;
+}
+
+.content input {
+    margin-left: .1rem;
+    padding: .2rem .1rem;
+    margin-bottom: .1rem;
+    width: 70%;
+    font-size: .5rem;
+    border: .01rem solid rgb(110, 101, 101);
+}
+
+.content span {
+    color: white;
+    padding: .2rem .6rem;
+    background: orange;
+}

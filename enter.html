@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    window.onload = function () {
+        function change() {
+            var num = 1024;
+            width = document.documentElement.clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize = (width / num) * 100 + 'px';
+        }
+        change()
+        window.onresize = change;
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/res.css">
+    <link rel="stylesheet" href="./css/public.css">
+</head>
+<script src="./js/zepto.js"></script>
+<script src="./js/zepto.touch.js"></script>
+<script src="./js/enter.js"></script>
+<!-- 头部 -->
+<header>
+    <div class="left">
+        <img src="./image/image/index/logo.jpg" alt="">
+    </div>
+    <div class="right">
+        <ul>
+            <li><img src="./image/image/index/my.jpg" alt=""></li>
+            <li><img src="./image/image/index/xiazai.jpg" alt=""></li>
+        </ul>
+    </div>
+</header>
+
+<div class="content">
+    <p>手机号: <input type="text"></p>
+    <p>密&emsp;码: <input type="password"></p>
+    <p><span class="click">登录</span></p>
+</div>
+
+<!-- 底部 -->
+<footer>
+    <div class="talk">北京找房无忧网 > 首页 </div>
+    <div class="pic">
+        <ul>
+            <li>
+                <img src="./image/image/index/apple.png" alt="">
+            </li>
+            <li>
+                iphone <br>客户端
+            </li>
+            <li>
+                <img src="./image/image/index/android.png" alt="">
+            </li>
+            <li>
+                android <br>客户端
+            </li>
+        </ul>
+        <h3>北京找房无忧房地产经纪有限公司</h3>
+        <h4>网络经营与可证 京ICP备20160812号-12</h4>
+    </div>
+</footer>
+
+<body>
+
+</body>
+
+</html>

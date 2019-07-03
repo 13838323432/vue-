@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    window.onload = function () {
+        function change() {
+            var num = 1024;
+            width = document.documentElement.clientWidth;
+            document.getElementsByTagName('html')[0].style.fontSize = (width / num) * 100 + 'px';
+        }change()
+        window.onresize = change;
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+<script src="./js/zepto.js"></script>
+<script src="./js/jquery.min.js"></script>
+<body>
+    <header>
+        <div class="left">
+            <img src="./image/image/index/logo.jpg" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><img src="./image/image/index/my.jpg" alt=""></li>
+                <li><img src="./image/image/index/xiazai.jpg" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <div class="search">
+        <input type="text" placeholder="请输入小区名称或商圈名称">
+        <div class="icon">
+            <span>|</span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="cate">
+        <button >区域</button>
+        <button>价格</button>
+        <button>房型</button>
+        <button>更多</button>     
+    </div>
+    <div class="white">
+        <div class="one">
+        <ul>
+         <li class="color">区域</li>
+         <li class="one_b">地铁</li>
+        </ul>
+        <ul>
+            <li>附近</li>
+            <li>不限</li>
+            <li><span>朝阳</span></li>
+            <li>海淀</li>
+            <li>昌平</li>
+            <li>丰台</li>
+            <li>石景山</li>
+        </ul>
+        <ul>
+            <li><span>不限</span></li>
+             <li>安贞</li>
+             <li>安林匹克公园</li>
+             <li>百子湾</li>
+             <li>北江大</li>
+             <li>北苑</li>
+             <li>CBD</li>
+        </ul>
+        </div>
+        <div class="two ">
+       <ul>
+           <li>不限</li>
+           <li>100万以下</li>
+           <li>100万-150万</li>
+           <li>150万-200万</li>
+           <li>200万-250万</li>
+           <li>250万-300万</li>
+           <li>自定义价格</li>
+       </ul>
+        </div>
+        <div class="three">
+          <ul>
+              <li> <p>不限</p> </li>
+              <li> <p>1室</p>  </li>
+              <li> <p>2室</p> <img src="./image/image/SecondHandList/ok.png" alt=""></li>
+              <li> <p>3室</p> </li>
+
+              <li> <p>4室</p> </li>
+              <li> <p>5室</p> </li>
+              <li> <span class="sure">确定</span></li>
+          </ul>  
+        </div>
+        <div class="four">
+            <p>区域</p>
+            <p class="bottom"><span>南</span><span>南北</span>
+            <span>东</span> <span>西</span>
+            <span>北</span>    
+        </p>
+            <p>面积（平方）</p>
+            <p class="bottom"><span>50以下</span><span>50-70</span>
+            <span>70-90</span><span>90-100</span>
+            <span>110-130</span><span>130-150</span> 
+            <span>150-200</span><span>200以上</span>
+        </p>
+            <p>标签</p>
+            <p class="bottom"><span>学区房</span><span>地铁房</span>
+            <span>不限购</span><span>满两年</span>
+            <span>满五唯一</span><span>降价</span> 
+            <span>新上</span><span>独家</span><span>有钥匙</span>
+        </p>
+            <p>楼龄</p>
+            <p class="bottom"><span>5年以内</span><span>10年以内</span>
+            <span>10-20年</span><span>20年以上</span>
+        </p>
+        </div>
+    </div>
+    
+
+
+
+
+             <!-- <div class="list-h-c">
+                <div><img src="./image/image/index/img1.jpg" alt=""></div>
+                <div class="talk-h">
+                    <h2>文化部中间层 一层带爱的方式多福多寿</h2>
+                    <h4>南北高楼层/6层</h4>
+                    <h4> 签约价格：13244元/平 <span>1105万</span></h4>
+                    <h4>签约日期：201511月10日 </h4>
+                </div>
+            </div>  -->
+              <ul id="list_num">
+                <!-- 渲染区域 -->
+              </ul>
+              <!-- 渲染模板 -->
+        <script id="sy" type="text/x-dot-template">
+            {{~it.data:value:index}}
+            <div class="list-h">
+             <div class="list-h-c">
+                  <div><img src="{{=value.img}}" alt=""></div>
+                    <div class="talk-h">
+                        <h2>{{=value.text}}</h2>
+                        <h4>{{=value.title}}</h4>
+                        <h4> {{=value.price}} <span>{{=value.num}}</span></h4>
+                        <h4>{{=value.date}} </h4>
+                    </div>
+               </div>
+        </div>
+        {{~}}
+    </script>
+<script src="./js/doT.min.js"></script>
+<script src="../找房无忧/js/list.js"></script>
+    <!-- 底部 -->
+    <footer>
+        <div class="talk">北京找房无忧网 > 首页 </div>
+        <div class="pic">
+            <ul>
+                <li>
+                    <img src="./image/image/index/apple.png" alt="">
+                </li>
+                <li>
+                    iphone <br>客户端
+                </li>
+                <li>
+                    <img src="./image/image/index/android.png" alt="">
+                </li>
+                <li>
+                    android <br>客户端
+                </li>
+            </ul>
+            <h3>北京找房无忧房地产经纪有限公司</h3>
+            <h4>网络经营与可证 京ICP备20160812号-12</h4>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+*{
+    margin: 0;padding: 0;
+}
+
+/* 头部 */
+header {
+    background: #FF8A00;
+    padding: .15rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header>.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>.left>img {
+    width: 4rem;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+header>.right>ul {
+    list-style: none;
+    display: flex;
+}
+
+header>.right>ul li {
+    padding-top: .2rem;
+    box-sizing: border-box;
+    margin-right: .2rem;
+}
+
+header>.right>ul li img {
+    width: .9rem;
+    height: auto;
+}
+
+header>.right>ul li:last-child {
+    margin-right: 0;
+}
+
+
+/* 底部 */
+footer {
+    background: #2f3130;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(104, 93, 93);
+    font-size: .3rem;
+}
+
+footer>.talk {
+    font-size: .4rem;
+    padding: .15rem .5rem;
+    color: rgb(139, 125, 125);
+    border-bottom: #757a78 .01rem solid;
+}
+
+footer>.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>.pic ul {
+    margin-top: .3rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer>.pic>ul>li {
+    margin-right: .2rem;
+}
+
+footer>.pic>ul>li img {
+    width: .6rem;
+    height: .6rem;
+}
+
+footer>.pic>ul>li:nth-child(2) {
+    margin-right: .4rem;
+}
+
+footer>.pic>ul>li:nth-child(4) {
+    margin-right: 0px;
+}
+
+footer>.pic>h3 {
+    margin: .2rem 0px 10px 0px;
+}
